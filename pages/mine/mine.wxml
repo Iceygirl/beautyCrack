@@ -1,0 +1,52 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+  <!-- 登录-->
+  <view class="login-wrap flex-row">
+    <image class="login-avatar-img" src="" mode="aspectFill"></image>
+    <view class="login-username">周小曼</view>
+  </view>
+
+  <!-- 功能选择部分 -->
+  <view class="operation-part">
+    <view class="operation-item flex-row">
+      <view class="operation-item-left flex-row">
+        <image class="icon" src="/imgs/icon/my_Orders.png"></image>
+        <view>我的下单</view>
+      </view>
+      <image class="more-right-icon" src="/imgs/icon/more_right.png"></image>
+    </view>
+    <view class="operation-item flex-row">
+      <view class="operation-item-left flex-row">
+        <image class="icon" src="/imgs/icon/shopping_list.png"></image>
+        <view>我的购物单</view>
+      </view>
+      <image class="more-right-icon" src="/imgs/icon/more_right.png"></image>
+    </view>
+
+    <view class="operation-item flex-row">
+      <view class="operation-item-left flex-row">
+        <image class="icon" src="/imgs/icon/shopping_cart.png"></image>
+        <view>查看购物车</view>
+      </view>
+      <image class="more-right-icon" src="/imgs/icon/more_right.png"></image>
+    </view>
+
+    <view class="operation-item flex-row">
+      <view class="operation-item-left flex-row">
+        <image class="icon" src="/imgs/icon/Mentor.png"></image>
+        <view>我是师傅</view>
+      </view>
+      <image class="more-right-icon" src="/imgs/icon/more_right.png"></image>
+    </view>
+  </view>
+
+  <view class="about">
+    <view class="operation-item flex-row">
+        <view class="operation-item-left flex-row">
+          <image class="icon" src="/imgs/icon/about_us.png"></image>
+          <view>关于美缝</view>
+        </view>
+        <image class="more-right-icon" src="/imgs/icon/more_right.png"></image>
+    </view>
+  </view>
+</view>

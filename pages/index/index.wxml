@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view class="container flex-column">
+  <!-- 轮播 -->
+  <swiper indicator-dots autoplay 
+indicator-color="#fff" indicator-active-color="#ffac36" interval="5000" duration="1000" class="swiper-img-wrap">
+    <swiper-item wx:for="{{imgUrls}}" wx:for-item="img">
+      <image class="slide-img" src="{{img}}" mode="aspectFill"></image>
+    </swiper-item>
+  </swiper>
+  <!-- 轮播 -->
+
+
+  <!-- 下单表单 -->
+  <view class="order-form-wrap flex-column">
+    <view class="order-form-title flex-row flex-center">
+      <image class="order-icon" mode="aspectFill" src="/imgs/icon/my_Orders.png"></image>
+      <view>下单</view>
+    </view>
+    <view class="order-form">
+      <form report-submit bindsubmit="submit">
+        <label class="order-form-item flex-row">
+          <view class="input-title">您的称呼</view>
+          <input class="input-view" name="name"></input>
+        </label>
+        <label class="order-form-item flex-row">
+          <view class="input-title">联系方式</view>
+          <input class="input-view" name="phone" type="number"></input>
+        </label>
+        <label class="order-form-item flex-row order-form-location" catchtap="getLocation">
+          <view class="flex-row">
+            <view class="input-title">您的位置</view>
+            <input disabled class="input-location text-flow" name="address" value="{{address}}" ></input>
+          </view>
+          <image mode="aspectFill" class="location_icon" src="/imgs/icon/lacation.png"></image>
+        </label>
+        <label class="order-form-item flex-row">
+          <view class="input-title">详细地址补充</view>
+          <textarea class="input-view"></textarea>
+        </label>
+        <button form-type="submit" class="order-submit" hover-class='submit-hover'>一键下单</button>
+      </form>
+    </view>
+  </view>
+  <!-- 下单表单 -->
+
+</view>
+

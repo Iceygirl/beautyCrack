@@ -1,0 +1,56 @@
+/**app.wxss**/
+Page {
+  width:100%;
+  height:100%;
+}
+
+view {
+  box-sizing:border-box;
+}
+
+.container {
+  min-height:100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+
+.swiper-img-wrap {
+  height:400rpx;
+}
+.swiper-img-wrap image {
+  width:100%;
+  height:400rpx;
+}
+
+.text-flow {
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.icon {
+  width:30rpx;
+  height:30rpx;
+}
+
+.tips {
+  width: 100%;
+  color: #333;
+  text-align: center;
+  font-size: 15px;
+  padding-top: 20rpx;
+}

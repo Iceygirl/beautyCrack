@@ -1,0 +1,48 @@
+/* pages/mine/mine.wxss */
+.container {
+  background-color:#f6f5fa;
+}
+
+.login-wrap {
+  width:100%;
+  padding:50rpx 30rpx;
+  align-items: center;
+  background-color: #fff;
+}
+.login-avatar-img {
+  border:1px solid #000;
+  width:120rpx;
+  height:120rpx;
+  border-radius: 50%;
+  margin-right:30rpx;
+}
+.more-right-icon {
+  width:18rpx;
+  height:20rpx;
+}
+
+.operation-part {
+  background-color: #fff;
+  margin-top:20rpx;
+}
+.operation-item {
+  align-items: center;
+  padding:20rpx 30px;
+  border-bottom:1px solid #f6f5fa;
+  justify-content: space-between;
+}
+.operation-item-left {
+  align-items: center;
+}
+.operation-item>view {
+  font-size:12pt;
+  color:#666;
+}
+.icon {
+  margin-right:30rpx;
+}
+
+.about {
+  margin-top:20rpx;
+  background-color: #fff;
+}

@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/shop/shop",
+    "pages/index/index",
+    "pages/mine/mine"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffac36",
+    "navigationBarTitleText": "美缝剂",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "我要下单",
+        "iconPath": "/imgs/icon/tabbar_orders_normal.png",
+        "selectedIconPath": "/imgs/icon/tabbar_orders_selected.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "商城",
+        "iconPath": "/imgs/icon/tabbar_shop_normal.png",
+        "selectedIconPath": "/imgs/icon/tabbar_shop_selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "个人中心",
+        "iconPath": "/imgs/icon/tabbar_mine_normal.png",
+        "selectedIconPath": "/imgs/icon/tabbar_mine_selected.png"
+      }
+    ],
+    "color":"#949494",
+    "selectedColor":"#fcbe73",
+    "borderStyle":"white",
+    "backgroundColor":"#fff"
+  }
+}

@@ -1,0 +1,42 @@
+<!--pages/shop/shop.wxml-->
+<view class="container flex-column">
+  <!-- 轮播 -->
+  <swiper indicator-dots indicator-color="#fff" indicator-active-color="#ffac36" autoplay interval="5000" duration="1000" class="swiper-img-wrap" >
+    <swiper-item wx:for="{{imgUrls}}" wx:for-item="img">
+      <image src="{{img}}" mode="aspectFill"></image>
+    </swiper-item>
+  </swiper>
+  <!-- 轮播 -->
+
+  <!-- 搜索栏 -->
+  <view class="search-wrap">
+    <label class="flex-row">
+      <icon class="search-icon flex-center" type="search" color="#ffac36" size="20"></icon>
+      <input class="input-view" placeholder="请输入搜索内容"></input>
+    </label>
+  </view>
+  <!-- 搜索栏 -->
+
+  <!-- 商品列表 -->
+  <view class="shop-list flex-row">
+    <block wx:if="{{list.length}}">
+      <view class="shop-list-item flex-column" wx:for="{{list}}" wx:for-item="listItem" wx:key="id" hover-class="hover-class" hover-start-time='150' bindtap='goToShopItem' data-id='{{listItem.id}}'>
+        <image class="shop-list-item-img" src="{{listItem.url}}" mode="aspectFill"></image>
+        <view class="shop-list-item-title text-flow">{{listItem.title}}</view>
+        <view class="shop-list-item-bottom flex-row">
+          <view class="shop-list-item-bottom-left flex-row">
+            <view class="shop-list-item-price">￥{{listItem.price}}</view>
+            <view class="shop-list-item-sell flex-column flex-center">已售{{listItem.sell}}</view>
+          </view>
+          <image class="shopping_cart_red-icon" src="/imgs/icon/shopping_cart_red.png"></image>
+        </view>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="tips">
+        暂无商品
+      </view>
+    </block>
+  </view>
+  <!-- 商品列表 -->
+</view>
